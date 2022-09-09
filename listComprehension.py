@@ -18,7 +18,7 @@ import random as ran
 onetoten = []
 for x in range(1,11):
   onetoten.append((x**3))
-print('\ngo fuck yourself {}'.format(onetoten))
+print('\nthe list is {}'.format(onetoten))
 
 
 
@@ -33,7 +33,7 @@ for x in range(0,2):
   elif r==0:
     flips.append('h')
   else:
-    print('you fucked up')
+    print('you messed up')
 print('\nyour flips are {}'.format(flips))
 
 
@@ -43,16 +43,16 @@ print('\nyour flips are {}'.format(flips))
 [x+y for x in [10,20,30] for y in [1,2,3]] and figure out what is going on here,.   Next, write a nested for loop that gives you the same result. 
 This will show you've explained what the comprehension does 
 '''
-dafuck=[x+y for x in [10,20,30] for y in [1,2,3]]
-print('\nwhat is dafuck {}'.format(dafuck))
+dis = [x+y for x in [10,20,30] for y in [1,2,3]]
+print('\nwhat is dis {}'.format(dis))
 
-fucks=[]
+copy=[]
 nani = 0
 for x in range(1,4):
   nani+=10
   for x in range(1,4):
-    fucks.append(nani+x)
-print('\nnumber of fucks is {}'.format(fucks))
+    copy.append(nani+x)
+print('\nnumbers in the list {}'.format(copy))
 
 
 
@@ -60,12 +60,12 @@ print('\nnumber of fucks is {}'.format(fucks))
 
 
 '''3. Write a function that takes in a string and uses a list comprehension to return all the vowels in the string.'''
-dfordickbag = input('\ntype in your sentence whore: ')
+line = input('\ntype in your sentence: ')
 c =0
-for x in dfordickbag:
+for x in line:
   if x == 'a' or x=='e' or x=='i' or x=='o' or x=='u' or x=='y':
     c+=1
-print('\nthe number of dicks in the bag is {}'.format(c))
+print('\nthe number of vowels in the string is {}'.format(c))
 
 
 
@@ -82,6 +82,7 @@ def cubethem(onetoten):
     onetoten[i] = i**3 
   print('1 - 10 cubed is {}'.format(onetoten))
   return 
+
 
 cubethem(onetoten)
 '''
